@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{8611F453-3F65-4DEB-89DD-73647D85502E}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MBookLibrary" expanded="True">
+            <Node name="MBookLibrary.Business" expanded="True" />
+            <Node name="MBookLibrary.Externals" expanded="True" />
+            <Node name="MBookLibrary.Models" expanded="True">
+              <Node name="Externals" expanded="True" />
+            </Node>
+            <Node name="MBookLibrary.Service" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="MBookLibrary.Service.Test" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MBookLibrary.Service PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

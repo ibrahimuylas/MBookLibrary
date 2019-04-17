@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MBookLibrary.Common\MBookLibrary.Common.csproj" />
+    <ProjectReference Include="..\MBookLibrary.Data.Entities\MBookLibrary.Data.Entities.csproj" />
+    <ProjectReference Include="..\MBookLibrary.Data.Repository\MBookLibrary.Data.Repository.csproj" />
+    <ProjectReference Include="..\MBookLibrary.Models\MBookLibrary.Models.csproj" />
+    <ProjectReference Include="..\MBookLibrary.Externals\MBookLibrary.Externals.csproj" />
+  </ItemGroup>
+
+</Project>

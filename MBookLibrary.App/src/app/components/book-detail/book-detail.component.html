@@ -1,0 +1,35 @@
+<div class='card'
+     *ngIf='book'>
+  <div class='card-header'>
+    {{title + ': ' + book.title}}
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-8'>
+        <div class='row'>
+          <div class='col-md-4'>ISBN:</div>
+          <div class='col-md-8'>{{book.isbn}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Title:</div>
+          <div class='col-md-8'>{{book.title}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Author:</div>
+          <div class='col-md-8'>{{book.author}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Genre:</div>
+          <div class='col-md-8'>{{book.genre}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='card-footer'>
+    <button class='btn btn-outline-secondary'
+            (click)='onBack()'
+            style='width:80px'>
+      <i class='fa fa-chevron-left'></i> Back
+    </button>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class='card-body'>
+    <div class='table-responsive'>
+      <table class='table'
+             *ngIf='books && books.length'>
+        <thead>
+          <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type='text' [(ngModel)]='listFilter.isbn' /></td>
+            <td><input type='text' [(ngModel)]='listFilter.title' /></td>
+            <td><input type='text' [(ngModel)]='listFilter.author' /></td>
+            <td><input type='text' [(ngModel)]='listFilter.genre' /></td>
+          </tr>
+          <tr *ngFor='let book of books'>
+            <td>
+              <a [routerLink]="['/books', book.id]">
+                {{ book.isbn }}
+              </a>
+            </td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.genre}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>
